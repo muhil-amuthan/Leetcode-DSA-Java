@@ -18,4 +18,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0058-length-of-last-word](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0058-length-of-last-word/) | Easy |
 <!---LeetCode Topics End-->
