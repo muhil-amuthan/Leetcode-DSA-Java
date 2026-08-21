@@ -14,6 +14,7 @@
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0070-climbing-stairs](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0070-climbing-stairs/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
@@ -27,4 +28,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0070-climbing-stairs](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0070-climbing-stairs/) | Easy |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0070-climbing-stairs](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0070-climbing-stairs/) | Easy |
 <!---LeetCode Topics End-->
