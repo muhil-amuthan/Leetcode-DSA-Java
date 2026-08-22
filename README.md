@@ -10,10 +10,12 @@
 | [0136-single-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0136-single-number/) | Easy |
 | [0137-single-number-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0137-single-number-ii/) | Medium |
 | [0260-single-number-iii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0260-single-number-iii/) | Medium |
+| [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0001-two-sum/) | Easy |
+| [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -35,6 +37,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0070-climbing-stairs/) | Easy |
+| [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 ## Memoization
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -45,4 +48,13 @@
 | [0136-single-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0136-single-number/) | Easy |
 | [0137-single-number-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0137-single-number-ii/) | Medium |
 | [0260-single-number-iii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0260-single-number-iii/) | Medium |
+| [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 <!---LeetCode Topics End-->
