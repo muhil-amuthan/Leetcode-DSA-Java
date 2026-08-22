@@ -8,6 +8,7 @@
 | [0026-remove-duplicates-from-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0136-single-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0136-single-number/) | Easy |
+| [0137-single-number-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0137-single-number-ii/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -41,4 +42,5 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0136-single-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0136-single-number/) | Easy |
+| [0137-single-number-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0137-single-number-ii/) | Medium |
 <!---LeetCode Topics End-->
