@@ -39,6 +39,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0070-climbing-stairs/) | Easy |
+| [0231-power-of-two](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0231-power-of-two/) | Easy |
 | [0263-ugly-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 ## Memoization
@@ -50,6 +51,7 @@
 | ------- | ------- |
 | [0136-single-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0136-single-number/) | Easy |
 | [0137-single-number-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0137-single-number-ii/) | Medium |
+| [0231-power-of-two](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0231-power-of-two/) | Easy |
 | [0260-single-number-iii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0260-single-number-iii/) | Medium |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 ## Binary Search
@@ -65,4 +67,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0231-power-of-two](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0231-power-of-two/) | Easy |
 <!---LeetCode Topics End-->
