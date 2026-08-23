@@ -39,6 +39,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0070-climbing-stairs/) | Easy |
+| [0263-ugly-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 ## Memoization
 | Problem Name | Difficulty |
