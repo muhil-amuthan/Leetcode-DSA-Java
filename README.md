@@ -42,6 +42,7 @@
 | [0231-power-of-two](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0231-power-of-two/) | Easy |
 | [0263-ugly-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
+| [0342-power-of-four](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0342-power-of-four/) | Easy |
 ## Memoization
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -54,6 +55,7 @@
 | [0231-power-of-two](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0231-power-of-two/) | Easy |
 | [0260-single-number-iii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0260-single-number-iii/) | Medium |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
+| [0342-power-of-four](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0342-power-of-four/) | Easy |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -71,4 +73,5 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0231-power-of-two](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0231-power-of-two/) | Easy |
+| [0342-power-of-four](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0342-power-of-four/) | Easy |
 <!---LeetCode Topics End-->
