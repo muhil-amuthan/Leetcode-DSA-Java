@@ -9,6 +9,7 @@
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0136-single-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0136-single-number/) | Easy |
 | [0137-single-number-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0137-single-number-ii/) | Medium |
+| [0169-majority-element](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0169-majority-element/) | Easy |
 | [0260-single-number-iii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0260-single-number-iii/) | Medium |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
@@ -16,6 +17,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0001-two-sum/) | Easy |
+| [0169-majority-element](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0169-majority-element/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
@@ -66,11 +68,13 @@
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0169-majority-element](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0169-majority-element/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
 ## Counting Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0169-majority-element](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0169-majority-element/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
 ## Recursion
@@ -82,4 +86,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0169-majority-element/) | Easy |
+## Boyer–Moore Majority Vote Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0169-majority-element/) | Easy |
 <!---LeetCode Topics End-->
