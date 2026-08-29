@@ -18,6 +18,7 @@
 | [1572-matrix-diagonal-sum](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1572-matrix-diagonal-sum/) | Easy |
 | [1672-richest-customer-wealth](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1672-richest-customer-wealth/) | Easy |
 | [1748-sum-of-unique-elements](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1748-sum-of-unique-elements/) | Easy |
+| [2319-check-if-matrix-is-x-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/2319-check-if-matrix-is-x-matrix/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -111,6 +112,7 @@
 | [0867-transpose-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0867-transpose-matrix/) | Easy |
 | [1572-matrix-diagonal-sum](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1572-matrix-diagonal-sum/) | Easy |
 | [1672-richest-customer-wealth](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1672-richest-customer-wealth/) | Easy |
+| [2319-check-if-matrix-is-x-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/2319-check-if-matrix-is-x-matrix/) | Easy |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
