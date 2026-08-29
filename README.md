@@ -13,6 +13,7 @@
 | [0260-single-number-iii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0260-single-number-iii/) | Medium |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
+| [1572-matrix-diagonal-sum](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1572-matrix-diagonal-sum/) | Easy |
 | [1748-sum-of-unique-elements](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1748-sum-of-unique-elements/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -100,4 +101,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0169-majority-element](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0169-majority-element/) | Easy |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1572-matrix-diagonal-sum](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1572-matrix-diagonal-sum/) | Easy |
 <!---LeetCode Topics End-->
