@@ -12,6 +12,7 @@
 | [0169-majority-element](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0169-majority-element/) | Easy |
 | [0260-single-number-iii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0260-single-number-iii/) | Medium |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
+| [0540-single-element-in-a-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0766-toeplitz-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0766-toeplitz-matrix/) | Easy |
 | [0867-transpose-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0867-transpose-matrix/) | Easy |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
@@ -75,6 +76,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
+| [0540-single-element-in-a-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
