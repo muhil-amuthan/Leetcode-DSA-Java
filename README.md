@@ -21,6 +21,7 @@
 | [1672-richest-customer-wealth](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1672-richest-customer-wealth/) | Easy |
 | [1748-sum-of-unique-elements](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1748-sum-of-unique-elements/) | Easy |
 | [2319-check-if-matrix-is-x-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/2319-check-if-matrix-is-x-matrix/) | Easy |
+| [3875-construct-uniform-parity-array-i](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -59,6 +60,7 @@
 | [0263-ugly-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 | [0342-power-of-four](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0342-power-of-four/) | Easy |
+| [3875-construct-uniform-parity-array-i](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 ## Memoization
 | Problem Name | Difficulty |
 | ------- | ------- |
