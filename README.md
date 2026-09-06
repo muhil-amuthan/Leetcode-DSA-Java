@@ -47,12 +47,14 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0058-length-of-last-word](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0058-length-of-last-word/) | Easy |
+| [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
 | [0383-ransom-note](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0383-ransom-note/) | Easy |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
