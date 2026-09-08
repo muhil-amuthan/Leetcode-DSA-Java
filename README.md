@@ -63,6 +63,7 @@
 | [0263-ugly-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 | [0342-power-of-four](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0342-power-of-four/) | Easy |
+| [3870-count-commas-in-range](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3870-count-commas-in-range/) | Easy |
 | [3875-construct-uniform-parity-array-i](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3876-construct-uniform-parity-array-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3876-construct-uniform-parity-array-ii/) | Medium |
 ## Memoization
