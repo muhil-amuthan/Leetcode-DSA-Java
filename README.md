@@ -56,6 +56,7 @@
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
 | [0680-valid-palindrome-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0680-valid-palindrome-ii/) | Easy |
@@ -134,4 +135,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0867-transpose-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0867-transpose-matrix/) | Easy |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
 <!---LeetCode Topics End-->
