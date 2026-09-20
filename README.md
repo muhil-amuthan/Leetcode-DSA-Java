@@ -52,6 +52,7 @@
 | [0383-ransom-note](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0383-ransom-note/) | Easy |
 | [0680-valid-palindrome-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0680-valid-palindrome-ii/) | Easy |
 | [0709-to-lower-case](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0709-to-lower-case/) | Easy |
+| [3498-reverse-degree-of-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
@@ -135,6 +136,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0867-transpose-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0867-transpose-matrix/) | Easy |
+| [3498-reverse-degree-of-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
