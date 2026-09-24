@@ -142,6 +142,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
+| [0083-remove-duplicates-from-sorted-list](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0083-remove-duplicates-from-sorted-list/) | Easy |
 ## Geometry
 | Problem Name | Difficulty |
 | ------- | ------- |
