@@ -28,6 +28,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0001-two-sum/) | Easy |
+| [0013-roman-to-integer](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0013-roman-to-integer/) | Easy |
 | [0169-majority-element](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0169-majority-element/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 | [0383-ransom-note](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0383-ransom-note/) | Easy |
@@ -48,6 +49,7 @@
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0013-roman-to-integer](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0013-roman-to-integer/) | Easy |
 | [0058-length-of-last-word](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0058-length-of-last-word/) | Easy |
 | [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
 | [0383-ransom-note](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0383-ransom-note/) | Easy |
@@ -65,6 +67,7 @@
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0013-roman-to-integer](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0013-roman-to-integer/) | Easy |
 | [0070-climbing-stairs](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0070-climbing-stairs/) | Easy |
 | [0231-power-of-two](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0231-power-of-two/) | Easy |
 | [0263-ugly-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0263-ugly-number/) | Easy |
