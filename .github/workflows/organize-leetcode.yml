@@ -1,0 +1,64 @@
+name: Organize LeetCode Solutions
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  organize:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ------------------------------------------------
+      # Download repository
+      # ------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ------------------------------------------------
+      # Install Python
+      # ------------------------------------------------
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # ------------------------------------------------
+      # Run organizer
+      # ------------------------------------------------
+      - name: Organize LeetCode solutions
+        run: python .github/organize_leetcode.py
+
+      # ------------------------------------------------
+      # Push changes back to GitHub
+      # ------------------------------------------------
+      - name: Commit and push changes
+        run: |
+
+          git config user.name "github-actions[bot]"
+
+          git config user.email \
+          "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [[ -n "$(git status --porcelain)" ]]; then
+
+            git add .
+
+            git commit -m "Organize LeetCode solutions"
+
+            git push
+
+          else
+
+            echo "No changes to commit."
+
+          fi
