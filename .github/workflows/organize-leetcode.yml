@@ -36,7 +36,9 @@ jobs:
       # Run organizer
       # ------------------------------------------------
       - name: Organize LeetCode solutions
-        run: python .github/organize_leetcode.py
+        run: python -B .github/organize_leetcode.py
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
 
       # ------------------------------------------------
       # Push changes back to GitHub
