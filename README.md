@@ -17,6 +17,7 @@
 | [0867-transpose-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0867-transpose-matrix/) | Easy |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
+| [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1475-final-prices-with-a-special-discount-in-a-shop/) | Easy |
 | [1572-matrix-diagonal-sum](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1572-matrix-diagonal-sum/) | Easy |
 | [1672-richest-customer-wealth](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1672-richest-customer-wealth/) | Easy |
 | [1748-sum-of-unique-elements](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1748-sum-of-unique-elements/) | Easy |
@@ -159,4 +160,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0202-happy-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0202-happy-number/) | Easy |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1475-final-prices-with-a-special-discount-in-a-shop/) | Easy |
+## Monotonic Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1475-final-prices-with-a-special-discount-in-a-shop/) | Easy |
 <!---LeetCode Topics End-->
