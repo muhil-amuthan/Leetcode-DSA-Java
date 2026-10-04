@@ -60,6 +60,7 @@
 | [1108-defanging-an-ip-address](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1108-defanging-an-ip-address/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
+| [3794-reverse-string-prefix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/3794-reverse-string-prefix/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -68,6 +69,7 @@
 | [0202-happy-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0202-happy-number/) | Easy |
 | [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
 | [0680-valid-palindrome-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0680-valid-palindrome-ii/) | Easy |
+| [3794-reverse-string-prefix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/3794-reverse-string-prefix/) | Easy |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
