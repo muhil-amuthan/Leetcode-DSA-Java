@@ -22,6 +22,7 @@
 | [1672-richest-customer-wealth](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1672-richest-customer-wealth/) | Easy |
 | [1748-sum-of-unique-elements](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1748-sum-of-unique-elements/) | Easy |
 | [2319-check-if-matrix-is-x-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/2319-check-if-matrix-is-x-matrix/) | Easy |
+| [2778-sum-of-squares-of-special-elements](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/2778-sum-of-squares-of-special-elements/) | Easy |
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3550-smallest-index-with-digit-sum-equal-to-index/) | Easy |
 | [3875-construct-uniform-parity-array-i](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3876-construct-uniform-parity-array-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3876-construct-uniform-parity-array-ii/) | Medium |
@@ -127,6 +128,7 @@
 ## Enumeration
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [2778-sum-of-squares-of-special-elements](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/2778-sum-of-squares-of-special-elements/) | Easy |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
 ## Divide and Conquer
 | Problem Name | Difficulty |
