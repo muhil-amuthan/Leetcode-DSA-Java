@@ -53,6 +53,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0013-roman-to-integer](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0013-roman-to-integer/) | Easy |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0058-length-of-last-word](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0058-length-of-last-word/) | Easy |
 | [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
 | [0383-ransom-note](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0383-ransom-note/) | Easy |
@@ -67,6 +68,7 @@
 | ------- | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0202-happy-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0202-happy-number/) | Easy |
 | [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
 | [0680-valid-palindrome-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0680-valid-palindrome-ii/) | Easy |
@@ -173,4 +175,20 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1475-final-prices-with-a-special-discount-in-a-shop/) | Easy |
+## String Matching
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
+## Z Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
+## Knuth–Morris–Pratt Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
+## Boyer–Moore String-Search Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 <!---LeetCode Topics End-->
