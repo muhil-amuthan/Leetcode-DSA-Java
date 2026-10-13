@@ -6,6 +6,7 @@
 | ------- | ------- |
 | [0001-two-sum](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0001-two-sum/) | Easy |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0088-merge-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0088-merge-sorted-array/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0136-single-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0136-single-number/) | Easy |
 | [0137-single-number-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0137-single-number-ii/) | Medium |
@@ -69,6 +70,7 @@
 | [0019-remove-nth-node-from-end-of-list](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
+| [0088-merge-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0088-merge-sorted-array/) | Easy |
 | [0202-happy-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0202-happy-number/) | Easy |
 | [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
 | [0680-valid-palindrome-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0680-valid-palindrome-ii/) | Easy |
@@ -111,6 +113,7 @@
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0088-merge-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0088-merge-sorted-array/) | Easy |
 | [0169-majority-element](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0169-majority-element/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
