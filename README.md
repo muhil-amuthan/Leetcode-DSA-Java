@@ -194,4 +194,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
+## Database
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0196-delete-duplicate-emails](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/MySQL/0196-delete-duplicate-emails/) | Easy |
 <!---LeetCode Topics End-->
