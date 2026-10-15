@@ -58,6 +58,7 @@
 | [0058-length-of-last-word](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0058-length-of-last-word/) | Easy |
 | [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
 | [0383-ransom-note](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0383-ransom-note/) | Easy |
+| [0541-reverse-string-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0541-reverse-string-ii/) | Easy |
 | [0680-valid-palindrome-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0680-valid-palindrome-ii/) | Easy |
 | [0709-to-lower-case](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0709-to-lower-case/) | Easy |
 | [1108-defanging-an-ip-address](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1108-defanging-an-ip-address/) | Easy |
@@ -73,6 +74,7 @@
 | [0088-merge-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0088-merge-sorted-array/) | Easy |
 | [0202-happy-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0202-happy-number/) | Easy |
 | [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
+| [0541-reverse-string-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0541-reverse-string-ii/) | Easy |
 | [0680-valid-palindrome-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0680-valid-palindrome-ii/) | Easy |
 | [3794-reverse-string-prefix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/3794-reverse-string-prefix/) | Easy |
 ## Math
