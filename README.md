@@ -37,6 +37,7 @@
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0268-missing-number/) | Easy |
 | [0383-ransom-note](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0383-ransom-note/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
+| [1624-largest-substring-between-two-equal-characters](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1624-largest-substring-between-two-equal-characters/) | Easy |
 | [1748-sum-of-unique-elements](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1748-sum-of-unique-elements/) | Easy |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
 ## Dynamic Programming
@@ -62,6 +63,7 @@
 | [0680-valid-palindrome-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0680-valid-palindrome-ii/) | Easy |
 | [0709-to-lower-case](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0709-to-lower-case/) | Easy |
 | [1108-defanging-an-ip-address](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1108-defanging-an-ip-address/) | Easy |
+| [1624-largest-substring-between-two-equal-characters](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1624-largest-substring-between-two-equal-characters/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
 | [3794-reverse-string-prefix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/3794-reverse-string-prefix/) | Easy |
