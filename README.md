@@ -16,6 +16,7 @@
 | [0540-single-element-in-a-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0766-toeplitz-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0766-toeplitz-matrix/) | Easy |
 | [0867-transpose-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0867-transpose-matrix/) | Easy |
+| [1089-duplicate-zeros](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1089-duplicate-zeros/) | Easy |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/1365-how-many-numbers-are-smaller-than-the-current-number/) | Easy |
 | [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1475-final-prices-with-a-special-discount-in-a-shop/) | Easy |
@@ -78,6 +79,7 @@
 | [0344-reverse-string](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0344-reverse-string/) | Easy |
 | [0541-reverse-string-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0541-reverse-string-ii/) | Easy |
 | [0680-valid-palindrome-ii](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/0680-valid-palindrome-ii/) | Easy |
+| [1089-duplicate-zeros](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/1089-duplicate-zeros/) | Easy |
 | [3794-reverse-string-prefix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/3794-reverse-string-prefix/) | Easy |
 ## Math
 | Problem Name | Difficulty |
