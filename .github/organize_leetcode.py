@@ -34,8 +34,40 @@ TOPIC_FOLDERS = [
     "Math",
     "Bit-Manipulation",
     "Matrix",
+    "MySQL",
     "Other",
 ]
+
+
+# ============================================================
+# TOPIC PRIORITY RANKING
+# Specialized data structures & algorithmic paradigms take
+# precedence over broad container tags like Array, Math, String.
+# ============================================================
+
+TOPIC_PRIORITY = {
+    "Dynamic-Programming": 100,
+    "Backtracking": 95,
+    "Graphs": 90,
+    "Trees": 85,
+    "Heap": 80,
+    "Sliding-Window": 75,
+    "Stack": 70,
+    "Queue": 65,
+    "LinkedList": 60,
+    "Binary-Search": 55,
+    "Bit-Manipulation": 50,
+    "Matrix": 45,
+    "MySQL": 40,
+    "Two-Pointers": 30,
+    "Greedy": 25,
+    "HashMap": 20,
+    "Sorting": 15,
+    "Math": 10,
+    "Strings": 8,
+    "Arrays": 5,
+    "Other": 1,
+}
 
 
 # ============================================================
@@ -45,30 +77,40 @@ TOPIC_FOLDERS = [
 TAG_MAPPING = {
     "array": "Arrays",
     "string": "Strings",
+    "string matching": "Strings",
     "hash table": "HashMap",
     "two pointers": "Two-Pointers",
     "sliding window": "Sliding-Window",
     "stack": "Stack",
+    "monotonic stack": "Stack",
     "queue": "Queue",
     "monotonic queue": "Queue",
     "linked list": "LinkedList",
     "binary search": "Binary-Search",
     "sorting": "Sorting",
+    "counting sort": "Sorting",
     "tree": "Trees",
     "binary tree": "Trees",
     "binary search tree": "Trees",
+    "trie": "Trees",
     "heap": "Heap",
     "priority queue": "Heap",
     "graph": "Graphs",
     "breadth-first search": "Graphs",
     "depth-first search": "Graphs",
+    "union find": "Graphs",
     "greedy": "Greedy",
     "backtracking": "Backtracking",
     "dynamic programming": "Dynamic-Programming",
+    "memoization": "Dynamic-Programming",
     "math": "Math",
     "number theory": "Math",
+    "geometry": "Math",
     "bit manipulation": "Bit-Manipulation",
     "matrix": "Matrix",
+    "database": "MySQL",
+    "sql": "MySQL",
+    "mysql": "MySQL",
 }
 
 
@@ -124,6 +166,20 @@ IGNORE_DIRECTORIES = {
     "__pycache__",
 }
 
+CODE_EXTENSIONS = (
+    ".java",
+    ".cpp",
+    ".py",
+    ".js",
+    ".ts",
+    ".c",
+    ".cs",
+    ".go",
+    ".rs",
+    ".kt",
+    ".sql",
+)
+
 
 # ============================================================
 # CREATE TOPIC FOLDERS
@@ -141,76 +197,90 @@ def create_topic_folders():
 
 def clean_text(text):
     text = text.lower()
-    text = re.sub(
-        r"[^a-z0-9\s\-]",
-        " ",
-        text
-    )
-    text = re.sub(
-        r"\s+",
-        " ",
-        text
-    )
+    text = re.sub(r"[^a-z0-9\s\-]", " ", text)
+    text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 
 # ============================================================
-# GET POSSIBLE LEETCODE SLUG
+# GET PROBLEM SLUG
 # ============================================================
 
 def get_problem_slug(path):
     name = os.path.basename(path)
-
-    # Remove extension
     name = os.path.splitext(name)[0]
-
-    # Remove LeetHub problem number (e.g. 1-two-sum, 0001-two-sum)
-    name = re.sub(
-        r"^\d+[-_\s]+",
-        "",
-        name
-    )
-
-    # Convert to LeetCode slug
+    # Remove LeetHub problem number prefix (e.g. 0001-two-sum, 1-two-sum)
+    name = re.sub(r"^\d+[-_\s]+", "", name)
     name = name.lower()
-    name = re.sub(
-        r"[^a-z0-9]+",
-        "-",
-        name
-    )
-    name = name.strip("-")
-
-    return name
+    name = re.sub(r"[^a-z0-9]+", "-", name)
+    return name.strip("-")
 
 
 # ============================================================
-# GET LEETCODE TOPICS
+# PARSE LOCAL README.MD TAGS (FAST FALLBACK)
+# ============================================================
+
+_README_TAGS_CACHE = None
+
+def get_readme_tags_map():
+    global _README_TAGS_CACHE
+    if _README_TAGS_CACHE is not None:
+        return _README_TAGS_CACHE
+
+    _README_TAGS_CACHE = {}
+    readme_path = os.path.join(ROOT, "README.md")
+    if os.path.exists(readme_path):
+        try:
+            with open(readme_path, "r", encoding="utf-8") as f:
+                content = f.read()
+            sections = re.findall(
+                r"## ([^\n]+)\n\|[^\n]+\n\|[^\n]+\n(.*?)(?=\n## |\n<!--|\Z)",
+                content,
+                re.DOTALL
+            )
+            for section_title, table in sections:
+                tag_name = section_title.strip().lower()
+                problem_names = re.findall(r"\[([0-9]+-[^\]]+)\]", table)
+                for p in problem_names:
+                    slug = get_problem_slug(p)
+                    _README_TAGS_CACHE.setdefault(slug, []).append(tag_name)
+                    _README_TAGS_CACHE.setdefault(p, []).append(tag_name)
+        except Exception as e:
+            print(f"Could not parse local README tags: {e}")
+
+    return _README_TAGS_CACHE
+
+
+# ============================================================
+# GET LEETCODE TOPICS (GRAPHQL WITH TIMEOUT + LOCAL CACHE)
 # ============================================================
 
 def get_leetcode_topics(slug):
     if not slug:
         return []
 
+    # 1. First attempt: Local tags extracted from root README.md (instant & rate-limit proof)
+    local_tags = get_readme_tags_map().get(slug, [])
+    if local_tags:
+        return [t.lower() for t in local_tags]
+
+    # 2. Second attempt: LeetCode GraphQL (for newly submitted problems)
     query = """
     query questionData($titleSlug: String!) {
         question(titleSlug: $titleSlug) {
-            title
             topicTags {
                 name
             }
         }
     }
     """
-
     payload = {
         "query": query,
         "variables": {
             "titleSlug": slug
         }
     }
-
     data = json.dumps(payload).encode("utf-8")
-
     request = urllib.request.Request(
         "https://leetcode.com/graphql",
         data=data,
@@ -221,81 +291,59 @@ def get_leetcode_topics(slug):
     )
 
     try:
-        with urllib.request.urlopen(
-            request,
-            timeout=10
-        ) as response:
-            result = json.loads(
-                response.read().decode("utf-8")
-            )
+        with urllib.request.urlopen(request, timeout=3) as response:
+            result = json.loads(response.read().decode("utf-8"))
+        question = result.get("data", {}).get("question")
+        if question and question.get("topicTags"):
+            return [t["name"].lower() for t in question["topicTags"]]
+    except Exception:
+        pass
 
-        question = (
-            result
-            .get("data", {})
-            .get("question")
-        )
-
-        if not question:
-            return []
-
-        tags = question.get(
-            "topicTags",
-            []
-        )
-
-        return [
-            tag["name"].lower()
-            for tag in tags
-        ]
-
-    except Exception as error:
-        print(
-            f"Could not fetch LeetCode topics "
-            f"for '{slug}': {error}"
-        )
-        return []
+    return []
 
 
 # ============================================================
 # DETERMINE TOPIC
 # ============================================================
 
-def determine_topic(path):
+def determine_topic(path, current_topic=None):
     filename = os.path.basename(path)
     slug = get_problem_slug(path)
 
-    print(f"\nChecking: {filename}")
-    print(f"Problem slug: {slug}")
-
-    # --------------------------------------------------------
-    # Try official LeetCode tags
-    # --------------------------------------------------------
+    # 1. Check tags from LeetCode / README
     tags = get_leetcode_topics(slug)
 
     if tags:
-        print("LeetCode tags:", ", ".join(tags))
-        for tag in tags:
-            if tag in TAG_MAPPING:
-                topic = TAG_MAPPING[tag]
-                print(f"Topic selected: {topic}")
-                return topic
+        candidate_topics = [TAG_MAPPING[t] for t in tags if t in TAG_MAPPING]
 
-    # --------------------------------------------------------
-    # Keyword fallback
-    # --------------------------------------------------------
+        if candidate_topics:
+            # Check if there are specialized structural/algorithmic topics (priority >= 45)
+            # such as Matrix, Dynamic-Programming, Stack, Binary-Search, Bit-Manipulation, etc.
+            has_specialized = any(TOPIC_PRIORITY.get(c, 0) >= 45 for c in candidate_topics)
+
+            # If currently in a generic folder (Arrays, Math, etc.) and a specialized topic exists:
+            if has_specialized and current_topic and TOPIC_PRIORITY.get(current_topic, 0) < 45:
+                best_topic = max(candidate_topics, key=lambda x: TOPIC_PRIORITY.get(x, 0))
+                print(f"Selecting specialized topic '{best_topic}' over generic '{current_topic}' for {filename}")
+                return best_topic
+
+            # If current topic is already among the valid candidate topics, keep it
+            if current_topic and current_topic in candidate_topics:
+                return current_topic
+
+            # Otherwise, pick candidate with highest priority
+            best_topic = max(candidate_topics, key=lambda x: TOPIC_PRIORITY.get(x, 0))
+            return best_topic
+
+    # 2. Check title/slug keywords
     text = clean_text(filename + " " + slug)
-
     for keyword, topic in KEYWORD_MAPPING.items():
         if keyword in text:
-            print(f"Fallback topic: {topic}")
             return topic
 
-    # --------------------------------------------------------
-    # Analyze file / directory contents (Code inspection)
-    # --------------------------------------------------------
+    # 3. Analyze file / directory code contents
     code_content = ""
     readme_content = ""
-
     files_to_check = []
     if os.path.isfile(path):
         files_to_check.append(path)
@@ -315,40 +363,33 @@ def determine_topic(path):
         except Exception:
             pass
 
-    # High-confidence code structure detection
     code_lower = code_content.lower()
+    if any(file_path.endswith(".sql") for file_path in files_to_check):
+        return "MySQL"
     if "treenode" in code_lower or "root.left" in code_lower or "root.right" in code_lower:
-        print("Code-based topic: Trees")
         return "Trees"
     if "listnode" in code_lower or ".next" in code_lower:
-        print("Code-based topic: LinkedList")
         return "LinkedList"
     if "priorityqueue" in code_lower:
-        print("Code-based topic: Heap")
         return "Heap"
     if "matrix" in text or "[][]" in code_content or "grid[" in code_lower:
-        print("Code-based topic: Matrix")
         return "Matrix"
     if "stack<" in code_lower:
-        print("Code-based topic: Stack")
         return "Stack"
-    if "hashmap" in code_lower or "hashset" in code_lower or "map<" in code_lower:
-        print("Code-based topic: HashMap")
+    if "hashmap" in code_lower or "hashset" in code_lower:
         return "HashMap"
 
-    # General keywords in code
     for keyword, topic in KEYWORD_MAPPING.items():
         if keyword in code_lower:
-            print(f"Code-based topic: {topic}")
             return topic
-
-    # General keywords in README (problem description)
     for keyword, topic in KEYWORD_MAPPING.items():
         if keyword in readme_content:
-            print(f"README-based topic: {topic}")
             return topic
 
-    print("Topic: Other")
+    # If already in a valid topic folder and nothing better was found, stay there
+    if current_topic and current_topic in TOPIC_FOLDERS:
+        return current_topic
+
     return "Other"
 
 
@@ -365,14 +406,13 @@ def is_leetcode_problem_directory(path):
     except Exception:
         return False
 
-    code_extensions = (".java", ".cpp", ".py", ".js", ".ts", ".c", ".cs", ".go", ".rs", ".kt")
-    has_code = any(file.endswith(code_extensions) for file in files)
+    has_code = any(file.endswith(CODE_EXTENSIONS) for file in files)
 
     # Standard LeetHub directory contains README.md and solution file
     if "README.md" in files and has_code:
         return True
 
-    # Also handle problem directory formatted as [number]-[slug] with code inside
+    # Problem directory formatted as [number]-[slug] with code inside
     dirname = os.path.basename(path)
     if re.match(r"^\d+[-_]", dirname) and has_code:
         return True
@@ -381,13 +421,14 @@ def is_leetcode_problem_directory(path):
 
 
 # ============================================================
-# FIND LEETCODE DIRECTORIES
+# FIND UNORGANIZED LEETCODE DIRECTORIES
 # ============================================================
 
 def find_problem_directories():
     directories = []
 
     for root, dirs, files in os.walk(ROOT):
+        # Exclude ignored directories and existing topic folders
         dirs[:] = [
             d for d in dirs
             if d not in IGNORE_DIRECTORIES
@@ -408,7 +449,6 @@ def find_problem_directories():
 
 def find_solution_files():
     solution_files = []
-    extensions = (".java", ".cpp", ".py", ".js", ".ts")
 
     for root, dirs, files in os.walk(ROOT):
         dirs[:] = [
@@ -418,7 +458,7 @@ def find_solution_files():
         ]
 
         for file in files:
-            if not file.endswith(extensions):
+            if not file.endswith(CODE_EXTENSIONS):
                 continue
 
             path = os.path.join(root, file)
@@ -431,8 +471,8 @@ def find_solution_files():
 # MOVE LEETCODE DIRECTORY
 # ============================================================
 
-def move_problem_directory(path):
-    topic = determine_topic(path)
+def move_problem_directory(path, current_topic=None):
+    topic = determine_topic(path, current_topic=current_topic)
     destination_folder = os.path.join(ROOT, topic)
     os.makedirs(destination_folder, exist_ok=True)
 
@@ -440,11 +480,10 @@ def move_problem_directory(path):
     destination = os.path.join(destination_folder, directory_name)
 
     if os.path.abspath(path) == os.path.abspath(destination):
-        return
+        return destination
 
     if os.path.exists(destination):
-        print(f"Already exists: {destination}")
-        # Merge duplicate files if any, then remove source directory
+        print(f"Destination already exists: {destination}. Merging files...")
         try:
             for f in os.listdir(path):
                 src_file = os.path.join(path, f)
@@ -455,15 +494,11 @@ def move_problem_directory(path):
             print(f"Cleaned up duplicate source: {path}")
         except Exception as e:
             print(f"Could not merge duplicate {path}: {e}")
-        return
+        return destination
 
-    print(
-        f"MOVING DIRECTORY:\n"
-        f"  {path}\n"
-        f"  -> {destination}"
-    )
-
+    print(f"MOVING DIRECTORY: {path} -> {destination}")
     shutil.move(path, destination)
+    return destination
 
 
 # ============================================================
@@ -479,19 +514,100 @@ def move_solution_file(path):
     destination = os.path.join(destination_folder, filename)
 
     if os.path.abspath(path) == os.path.abspath(destination):
-        return
+        return destination
 
     if os.path.exists(destination):
         print(f"Already exists: {destination}")
+        return destination
+
+    print(f"MOVING FILE: {path} -> {destination}")
+    shutil.move(path, destination)
+    return destination
+
+
+# ============================================================
+# RE-CLASSIFY EXISTING TOPIC FOLDERS
+# ============================================================
+
+def reclassify_existing_directories():
+    """
+    Checks all problems currently inside TOPIC_FOLDERS to ensure
+    specialized problems (e.g. Matrix, Stack, DP, Bit-Manipulation)
+    are not mistakenly kept in generic folders like Arrays or Math.
+    """
+    print("\nChecking existing problems for optimal topic placement...")
+    for topic in TOPIC_FOLDERS:
+        topic_path = os.path.join(ROOT, topic)
+        if not os.path.isdir(topic_path):
+            continue
+
+        for item in sorted(os.listdir(topic_path)):
+            item_path = os.path.join(topic_path, item)
+            if is_leetcode_problem_directory(item_path):
+                move_problem_directory(item_path, current_topic=topic)
+
+
+# ============================================================
+# UPDATE ROOT README.MD LINKS
+# Updates all problem links in README.md to ensure they point
+# directly to the correct topic folder path.
+# ============================================================
+
+def update_readme_links():
+    readme_path = os.path.join(ROOT, "README.md")
+    if not os.path.exists(readme_path):
         return
 
-    print(
-        f"MOVING FILE:\n"
-        f"  {path}\n"
-        f"  -> {destination}"
-    )
+    problem_map = {}
+    for topic in TOPIC_FOLDERS:
+        topic_dir = os.path.join(ROOT, topic)
+        if not os.path.isdir(topic_dir):
+            continue
+        for item in os.listdir(topic_dir):
+            item_path = os.path.join(topic_dir, item)
+            if os.path.isdir(item_path):
+                problem_map[item] = topic
 
-    shutil.move(path, destination)
+    with open(readme_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    def replace_link(match):
+        prob_name = match.group(1)
+        base_url = match.group(2)
+        if prob_name in problem_map:
+            topic = problem_map[prob_name]
+            return f"[{prob_name}]({base_url}{topic}/{prob_name}/)"
+        return match.group(0)
+
+    pattern = r"\[([0-9]+-[^\]]+)\]\((https://github\.com/[^/]+/[^/]+/tree/[^/]+/)(?:[^/\)]+/)*[0-9]+-[^/\)]+/?\)"
+    new_content = re.sub(pattern, replace_link, content)
+
+    if new_content != content:
+        with open(readme_path, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        print("Updated README.md problem links to point to correct topic folders.")
+
+
+# ============================================================
+# CLEAN UP EMPTY DIRECTORIES SAFELY
+# ============================================================
+
+def cleanup_empty_directories():
+    for root, dirs, files in os.walk(ROOT, topdown=False):
+        parts = os.path.normpath(root).split(os.sep)
+        # Never touch anything inside .git or .github or other ignored directories
+        if any(part in IGNORE_DIRECTORIES for part in parts):
+            continue
+        # Never delete the root directory or topic folders
+        if root == ROOT or any(part in TOPIC_FOLDERS for part in parts):
+            continue
+
+        if not os.listdir(root):
+            try:
+                os.rmdir(root)
+                print(f"Removed empty directory: {root}")
+            except Exception:
+                pass
 
 
 # ============================================================
@@ -505,39 +621,29 @@ def main():
     print("==========================================")
     print()
 
-    # Create folders
+    # 1. Create topic folders
     create_topic_folders()
 
-    # --------------------------------------------------------
-    # First handle LeetHub problem directories
-    # --------------------------------------------------------
+    # 2. Organize any new/unorganized problem directories (e.g. from LeetHub)
     problem_directories = find_problem_directories()
-    print(f"Found {len(problem_directories)} LeetCode problem directories.")
-
+    print(f"Found {len(problem_directories)} unorganized problem directories.")
     for directory in problem_directories:
         move_problem_directory(directory)
 
-    # --------------------------------------------------------
-    # Then handle standalone files
-    # --------------------------------------------------------
+    # 3. Organize any standalone code solution files
     solution_files = find_solution_files()
-    print(f"\nFound {len(solution_files)} standalone solution files.")
-
+    print(f"Found {len(solution_files)} standalone solution files.")
     for file in solution_files:
         move_solution_file(file)
 
-    # --------------------------------------------------------
-    # Clean up any leftover empty directories
-    # --------------------------------------------------------
-    for root, dirs, files in os.walk(ROOT, topdown=False):
-        dir_name = os.path.basename(root)
-        if dir_name not in IGNORE_DIRECTORIES and dir_name not in TOPIC_FOLDERS and root != ROOT:
-            if not os.listdir(root):
-                try:
-                    os.rmdir(root)
-                    print(f"Removed empty directory: {root}")
-                except Exception:
-                    pass
+    # 4. Check existing problem directories for optimal topic placement
+    reclassify_existing_directories()
+
+    # 5. Clean up any leftover empty directories safely
+    cleanup_empty_directories()
+
+    # 6. Update README.md links
+    update_readme_links()
 
     print()
     print("==========================================")

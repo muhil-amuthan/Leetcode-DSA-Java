@@ -5,7 +5,12 @@ on:
     branches:
       - main
       - master
+      - dev
   workflow_dispatch:
+
+concurrency:
+  group: organize-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -47,17 +52,24 @@ jobs:
         run: |
 
           git config user.name "github-actions[bot]"
-
-          git config user.email \
-          "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           if [[ -n "$(git status --porcelain)" ]]; then
 
             git add .
+            git commit -m "Organize LeetCode solutions [skip ci]"
 
-            git commit -m "Organize LeetCode solutions"
+            # Pull and rebase with retry to handle rapid successive pushes (e.g. from LeetHub)
+            pushed=false
+            for i in {1..5}; do
+              echo "Attempt $i: pulling latest changes and pushing..."
+              git pull --rebase origin "${{ github.ref_name }}" && git push origin "${{ github.ref_name }}" && pushed=true && break || sleep 3
+            done
 
-            git push
+            if [ "$pushed" = false ]; then
+              echo "Failed to push changes after multiple attempts."
+              exit 1
+            fi
 
           else
 
