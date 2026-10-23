@@ -92,6 +92,7 @@
 | [0231-power-of-two](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Bit-Manipulation/0231-power-of-two/) | Easy |
 | [0263-ugly-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Math/0263-ugly-number/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Binary-Search/0268-missing-number/) | Easy |
+| [0292-nim-game](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0292-nim-game/) | Easy |
 | [0342-power-of-four](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Bit-Manipulation/0342-power-of-four/) | Easy |
 | [0836-rectangle-overlap](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Math/0836-rectangle-overlap/) | Easy |
 | [2235-add-two-integers](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Math/2235-add-two-integers/) | Easy |
@@ -214,4 +215,24 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2413-smallest-even-multiple](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Math/2413-smallest-even-multiple/) | Easy |
+## Brainteaser
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0292-nim-game](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0292-nim-game/) | Easy |
+## Minimax
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0292-nim-game](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0292-nim-game/) | Easy |
+## Game Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0292-nim-game](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0292-nim-game/) | Easy |
+## Nim Game
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0292-nim-game](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0292-nim-game/) | Easy |
+## Impartial Game
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0292-nim-game](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0292-nim-game/) | Easy |
 <!---LeetCode Topics End-->
