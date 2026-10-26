@@ -87,7 +87,7 @@
 | ------- | ------- |
 | [0013-roman-to-integer](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/HashMap/0013-roman-to-integer/) | Easy |
 | [0050-powx-n](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Math/0050-powx-n/) | Medium |
-| [0069-sqrtx](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0069-sqrtx/) | Easy |
+| [0069-sqrtx](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Binary-Search/0069-sqrtx/) | Easy |
 | [0070-climbing-stairs](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Dynamic-Programming/0070-climbing-stairs/) | Easy |
 | [0202-happy-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/HashMap/0202-happy-number/) | Easy |
 | [0231-power-of-two](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Bit-Manipulation/0231-power-of-two/) | Easy |
@@ -119,7 +119,7 @@
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
-| [0069-sqrtx](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0069-sqrtx/) | Easy |
+| [0069-sqrtx](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Binary-Search/0069-sqrtx/) | Easy |
 | [0268-missing-number](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Binary-Search/0268-missing-number/) | Easy |
 | [0540-single-element-in-a-sorted-array](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Binary-Search/0540-single-element-in-a-sorted-array/) | Medium |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Binary-Search/1351-count-negative-numbers-in-a-sorted-matrix/) | Easy |
@@ -240,5 +240,5 @@
 ## Newton's Method
 | Problem Name | Difficulty |
 | ------- | ------- |
-| [0069-sqrtx](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Java/0069-sqrtx/) | Easy |
+| [0069-sqrtx](https://github.com/muhil-amuthan/Leetcode-DSA-Java/tree/main/Binary-Search/0069-sqrtx/) | Easy |
 <!---LeetCode Topics End-->
